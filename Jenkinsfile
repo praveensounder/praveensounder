@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Message') {
             steps {
-                echo 'bild start'
+                echo 'build start'
             }
         }
 		stage('build') {
             steps {
-                python pythonadd.py
+                sh 'pythonadd.py'
             }
         }
 		stage('success') {
