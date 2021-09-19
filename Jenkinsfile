@@ -8,8 +8,8 @@ pipeline {
         }
 		stage('build') {
             steps {
-		sh python --version
-                sh pythonadd.py
+		sh 'python --version'
+                sh './pythonadd.py'
             }
         }
 		stage('success') {
