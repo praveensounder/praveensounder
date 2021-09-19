@@ -9,7 +9,7 @@ pipeline {
 		stage('build') {
             steps {
 		
-                python -u 'pythonadd.py'
+                python -u pythonadd.py
             }
         }
 		stage('success') {
