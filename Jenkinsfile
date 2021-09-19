@@ -9,7 +9,7 @@ pipeline {
         }
 		stage('build') {
             steps {
-                python ./pythonadd.py
+                python pythonadd.py
             }
         }
 		stage('success') {
