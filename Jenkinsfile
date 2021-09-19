@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { docker { image 'python:3.5.1' } }
     stages {
         stage('Message') {
             steps {
@@ -9,7 +9,7 @@ pipeline {
 		stage('build') {
             steps {
 		sh 'python --version'
-                sh './pythonadd.py'
+                sh '/pythonadd.py'
             }
         }
 		stage('success') {
