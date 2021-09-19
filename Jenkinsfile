@@ -9,6 +9,7 @@ pipeline {
         }
 		stage('build') {
             steps {
+		bat 'python --version'   
                 sh 'pythonadd.py'
             }
         }
