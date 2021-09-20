@@ -9,7 +9,7 @@ pipeline {
 		stage('build') {
             steps {
 		
-                bat 'ck app.py'
+                bat 'app.py'
             }
         }
 		stage('success') {
