@@ -9,8 +9,7 @@ pipeline {
 		stage('build') {
             steps {
 		
-                bat 'pythonadd.py'
-		bat 'ck app.py'
+                bat 'ck app.py'
             }
         }
 		stage('success') {
