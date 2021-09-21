@@ -4,11 +4,11 @@ pipeline {
     stages {
        stage ('Terraform Plan') {
     sh 'terraform init'
-    sh 'terraform plan'
+    sh 'terraform plan -target vpc.tf'
   }
 
   stage ('Terraform Apply') {
-    sh 'terraform apply -auto-approve'
+    sh 'terraform apply -target vpc.tf -auto-approve'
   }
     }
 }
