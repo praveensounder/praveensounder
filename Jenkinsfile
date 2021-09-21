@@ -5,13 +5,13 @@ pipeline {
        stage('Terraform Plan') {
            steps {
     bat 'terraform init'
-    bat 'terraform plan -target vpc.tf'
+    bat 'terraform plan'
   }
        }
 
   stage ('Terraform Apply') {
       steps {
-    bat 'terraform apply -target vpc.tf -auto-approve'
+    bat 'terraform apply -auto-approve'
   }
   }
     }
