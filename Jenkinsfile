@@ -18,9 +18,9 @@ pipeline {
       steps {
     echo "Sent mail notification"
     mail from: "praveensounder05@gmail.com",
-         to: "praveensounder05@gmail.com",
-         subject: "Terraform build complete",
-         body: "Jenkins job complete"
+         to: "praveensounder98@gmail.com",
+         subject: "Reg VPC",
+         body: "VPC created Success Fully"
         
     }
 }
