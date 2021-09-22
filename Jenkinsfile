@@ -15,6 +15,7 @@ pipeline {
   }
   }
   stage ('Notification') {
+      step{
     echo "Sent mail notification"
     mail from: "praveensounder05@gmail.com",
          to: "praveensounder05@gmail.com",
