@@ -19,7 +19,7 @@ pipeline {
     echo "Sent mail notification"
     mail from: "praveensounder05@gmail.com",
          to: "praveensounder98@gmail.com",
-         subject: "Reg VPC",
+         subject: "vpc",
          body: "VPC created Success Fully"
         
     }
