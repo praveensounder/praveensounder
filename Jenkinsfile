@@ -20,7 +20,7 @@ pipeline {
     mail from: "praveensounder05@gmail.com",
          to: "praveensounder98@gmail.com",
          subject: "vpc",
-         body: "VPC created Success Fully"
+         body: "VPC created Success fully"
         
     }
 }
