@@ -17,8 +17,8 @@ pipeline {
   stage ('Notification') {
       steps {
     echo "Sent mail notification"
-   emailext from: "praveensounder05@gmail.com",
-         to: "praveensounder98@gmail.com",
+   mail to: 'praveensounder98@gmail.com',
+        
          attachLog: True,
          subject: "vpcreg",
          body: "VPC created Success fully"
