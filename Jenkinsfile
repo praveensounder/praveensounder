@@ -26,7 +26,7 @@ pipeline {
 }
       stage ('log') {
       steps {  
-      cp "${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_NUMBER}/log" console-output.log
+      cp '${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_NUMBER}/log' console-output.log
     }
 }
     }
