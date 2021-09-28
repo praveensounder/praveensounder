@@ -26,9 +26,9 @@ pipeline {
 }
       stage('save log build') {
 steps {
-script {
-cp "${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_NUMBER}/log" console-output.log
-}
+echo "$JENKINS_HOME/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/log"
+
+echo "$BUILD_URL/consoleText"
 }
 }
     }
