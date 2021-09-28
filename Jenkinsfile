@@ -21,7 +21,7 @@ pipeline {
          to: "praveensounder98@gmail.com",
          subject: "vpcreg",
          body: "VPC created Success fully"
-      attachmentsPattern:"C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins/jobs/vpccreation/builds/36/log"
+      attachmentsPattern:"\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins/jobs/vpccreation/builds/36/log"
         
     }
 }
