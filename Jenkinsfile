@@ -19,9 +19,10 @@ pipeline {
     echo "Sent mail notification"
     mail from: "praveensounder05@gmail.com",
          to: "praveensounder98@gmail.com",
+        emailext attachLog: true
          subject: "vpcreg",
          body: "VPC created Success fully"
-      attachmentsPattern:"C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/jobs/vpccreation/builds/36"
+     
         
     }
 }
