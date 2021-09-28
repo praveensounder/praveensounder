@@ -19,8 +19,8 @@ pipeline {
     echo "Sent mail notification"
    mail to: 'praveensounder98@gmail.com',
         
-        [ attachLog: True,]
-        [subject: "vpcreg",
+       
+        subject: "vpcreg",
          body: "VPC created Success fully"
      
         
