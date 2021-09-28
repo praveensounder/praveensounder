@@ -24,10 +24,18 @@ pipeline {
         
     }
 }
-      stage ('log') {
-      steps {  
-      cp '${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_NUMBER}/log' console-output.log
-    }
+      stage('save log build') {
+steps {
+script {
+def logContent = Jenkins.getInstance()
+.getItemByFullName(env.JOB_NAME)
+.getBuildByNumber(
+Integer.parseInt(env.BUILD_NUMBER))
+.logFile.text
+// copy the log in the job's own workspace
+writeFile file: "buildlog.txt", text: logContent
+}
+}
 }
     }
 }
