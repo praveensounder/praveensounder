@@ -21,7 +21,7 @@ pipeline {
         
        
         subject: "vpcreg",
-         body: "VPC created Success fully{env.BUILD_URL}"
+         body: "VPC created Success fully${env.BUILD_URL/consoleText}"
         
     }
 }
