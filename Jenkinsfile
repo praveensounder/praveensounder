@@ -17,7 +17,7 @@ pipeline {
   stage ('Notification') {
       steps {
     echo "Sent mail notification"
-   mail to: 'praveensounder98@gmail.com',
+   mail to: 'praveensounder05@gmail.com',
         
        
         subject: "vpcreg",
