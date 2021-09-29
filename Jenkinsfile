@@ -36,7 +36,7 @@ echo "$BUILD_URL/consoleText"
 steps {
  
     
-  bat 'aws s3 cp "$JENKINS_HOME/jobs/$JOB_NAME/builds" s3://jenkinreport/jenkins/ --recursive --include "*"'
+    bat 'aws s3 cp "${JENKINS_HOME}/jobs/${JOB_NAME}/builds" s3://jenkinreport/jenkins/ --recursive --include "*"'
 }
 }
        
