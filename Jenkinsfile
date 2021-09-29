@@ -20,7 +20,7 @@ pipeline {
    mail to: 'praveensounder05@gmail.com',
         
        
-        subject: "vpcreg",
+        subject: "vpcreg123",
          body: "VPC created Success fully ${env.BUILD_URL}"
         
     }
