@@ -34,7 +34,7 @@ echo "$BUILD_URL/consoleText"
 }
         stage('upload') {
 steps {
-  bat 'aws s3 cp $WORKSPACE/vpccreation s3://jenkinreport/jenkins/ --recursive --include "*"'
+  bat 'aws s3 cp C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/vpccreation s3://jenkinreport/jenkins/ --recursive --include "*"'
 }
 }
        
