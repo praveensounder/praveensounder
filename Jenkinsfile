@@ -36,7 +36,7 @@ echo "$BUILD_URL/consoleText"
 steps {
  
     
-    bat 'aws s3 cp C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/jobs/workspace/vpccreation/ s3://jenkinreport/jenkins/ --recursive --include "*"'
+    bat 'aws s3 cp C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/jobs/vpccreation/ s3://jenkinreport/jenkins/ --recursive --include "*"'
 }
 }
        
