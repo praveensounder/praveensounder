@@ -34,7 +34,7 @@ echo "$BUILD_URL/consoleText"
 }
         stage('s3 uplode') {
             steps{
-              s3Upload(file:'58', bucket:'jenkinreport', path:'C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/jobs/vpccreation/builds/58/')
+              s3Upload(file:'58', bucket:'jenkinreport', path:'jenkinreport/jenkins/')
             }
         }
     }
