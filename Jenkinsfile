@@ -32,6 +32,13 @@ echo "$JENKINS_HOME/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/log"
 echo "$BUILD_URL/consoleText"
 }
 }
+        stage('upload') {
+steps {
+  bat 'aws s3 cp $WORKSPACE/vpccreation s3://jenkinreport/jenkins/ --recursive --include "*"'
+}
+}
+       
+        
     
     }
 }
