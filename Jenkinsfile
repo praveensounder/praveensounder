@@ -32,7 +32,7 @@ echo "$JENKINS_HOME/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/log"
 echo "$BUILD_URL/consoleText"
 }
 }
-        stage('upload') {
+        stage('upload s3') {
 steps {
  
     
