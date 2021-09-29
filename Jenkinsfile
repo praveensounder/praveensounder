@@ -34,7 +34,7 @@ echo "$BUILD_URL/consoleText"
 }
         stage('s3 uplode') {
             steps{
-                s3Copy(pathStyleAccessEnabled: true, fromBucket:'jenkinreport', fromPath:'C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins/jobs/vpccreation/builds/58/log', toBucket:'other-bucket', toPath:'https://jenkinreport.s3.us-west-2.amazonaws.com/jenkins/')
+              s3Upload(file:'https://jenkinreport.s3.us-west-2.amazonaws.com/jenkins/', bucket:'jenkinreport', path:'C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/jobs/vpccreation/builds/58/log')
             }
         }
     }
