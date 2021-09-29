@@ -20,7 +20,7 @@ pipeline {
    mail to: 'praveensounder05@gmail.com',
         
        
-        subject: "vpc and s3 uplode and to arifrrt ",
+        subject: "vpc and s3 uplode and to arifrrti ",
          body: "VPC created Successfully ${env.BUILD_URL}"
         
     }
