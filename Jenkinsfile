@@ -34,7 +34,7 @@ echo "$BUILD_URL/consoleText"
 }
         stage('s3 uplode') {
             steps{
-              s3Upload(file:'58/log/', bucket:'jenkinreport', path:'https://jenkinreport.s3.us-west-2.amazonaws.com/jenkins/')
+              s3Upload(file:'58/', bucket:'jenkinreport', path:'https://jenkinreport.s3.us-west-2.amazonaws.com/jenkins/')
             }
         }
     }
