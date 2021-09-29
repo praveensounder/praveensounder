@@ -32,6 +32,11 @@ echo "$JENKINS_HOME/jobs/$JOB_NAME/builds/${BUILD_NUMBER}/log"
 echo "$BUILD_URL/consoleText"
 }
 }
-     
+     stage('s3 uplode') {
+           steps{
+             
+               bat 'C:\Program Files\Amazon\AWSCLIV2\aws s3 cp $workspace/vpccreation s3://jenkinreport/jenkins/--recursive --include "*"'
+            }
+        }
     }
 }
