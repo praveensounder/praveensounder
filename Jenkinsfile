@@ -35,7 +35,7 @@ echo "$BUILD_URL/consoleText"
         stage('s3 uplode') {
             steps{
              
-                aws s3 cp $WORKSPACE/vpccreation s3://jenkinreport/jenkins/ --recursive --include "*"
+                aws s3 cp $WORKSPACE/vpccreation s3://jenkinreport/jenkins --recursive --include "*"
             }
         }
     }
