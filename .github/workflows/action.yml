@@ -4,12 +4,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x' # Default x64
-      - uses: praveensounder/praveensounder@master
+      - uses: ./.github/workflows/praveensounder@master
         with:
           aws_access_key_id: AKIA5G3MBGQF7GNPSVOO
           aws_secret_access_key: 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
