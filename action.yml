@@ -1,15 +1,14 @@
-name: deploy to lambda
-on: [push]
+name: Metrics
+on:
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: {branches: ["master", "main"]}
 jobs:
-  deploy_source:
-    name: build and deploy lambda
-    strategy:
-      matrix:
-        node-version: [12.x]
+  github-metrics:
     runs-on: ubuntu-latest
     steps:
      - name: default deploy
-       uses: /praveensounder/praveensounder@master
+       uses: praveensounder/praveensounder@master
        with:
           aws_access_key_id: AKIA5G3MBGQF7GNPSVOO
           aws_secret_access_key: 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
