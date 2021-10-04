@@ -23,7 +23,7 @@ jobs:
         uses: montudor/action-zip@v0.1.0
         with:
           args: zip -qq -r ./bundle.zip ./
-      - name: default deploy
+      - name: defaultdeploy
         uses: appleboy/lambda-action@master
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
