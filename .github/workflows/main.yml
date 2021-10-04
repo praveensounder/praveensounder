@@ -8,7 +8,7 @@ jobs:
         node-version: [12.x]
     runs-on: ubuntu-latest
     steps:
-      - uses: main/checkout@v1
+      - uses: praveensounder/praveensounder@master
       - name: default deploy
         uses: praveensounder/praveensounder@master
         with:
