@@ -3,16 +3,8 @@ on: [push]
 jobs:
   deploy_source:
     name: build and deploy lambda
-    strategy:
-      matrix:
-        node-version: [12.x]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
       - uses: praveensounder/praveensounder@master
       - name: default deploy
         uses: praveensounder/praveensounder@master
@@ -22,3 +14,4 @@ jobs:
           aws_region: us-east-1
           function_name: sheet
          
+          
