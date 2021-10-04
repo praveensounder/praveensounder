@@ -1,10 +1,14 @@
 name: deploy to lambda
 on: [push]
 jobs:
-  deploy_source:
-    name: build and deploy lambda
+  deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.x' # Default x64
       - uses: praveensounder/praveensounder@master
         with:
           aws_access_key_id: AKIA5G3MBGQF7GNPSVOO
