@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: default deploy
-       uses: praveensounder/praveensounder@master
+       uses: /home/runner/work/_actions/praveensounder/praveensounder@master
        with:
           aws_access_key_id: AKIA5G3MBGQF7GNPSVOO
           aws_secret_access_key: 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
